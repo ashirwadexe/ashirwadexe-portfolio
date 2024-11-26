@@ -1,5 +1,6 @@
 import React from 'react'
 import { GitBranchPlus, Github, GithubIcon, InstagramIcon, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Button } from './ui/button';
 
 function HeroSection() {
   return (
@@ -25,9 +26,10 @@ function HeroSection() {
             <a className='text-[#64748B] hover:text-[#1e2938]' href="mailto:ashirwadbappy@gmail.com" target='_blank'><Mail size={30}/></a>
             <a className='text-[#64748B] hover:text-[#1e2938]' href="https://www.instagram.com/ashirwad_bappy/" target='_blank'><InstagramIcon size={30}/></a>
         </div>
-        <div>
+        {/* <div>
             <p className='mt-6 text-md font-spartan text-[#64748B]'>I’m passionate about learning new technologies and constantly improving my skills. Whether I'm crafting interactive websites or optimizing systems, I’m excited to work on projects that make an impact. Let's collaborate and create something amazing!</p>
-        </div>
+        </div> */}
+
     </div>
   )
 }
