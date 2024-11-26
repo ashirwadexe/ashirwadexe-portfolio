@@ -1,6 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/Home'
+import { ThemeProvider } from './context/ThemeProvider'
 
 function App() {
 
@@ -13,7 +14,9 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={appRouter}/>
+      <ThemeProvider>
+        <RouterProvider router={appRouter}/>
+      </ThemeProvider>
     </>
   )
 }
